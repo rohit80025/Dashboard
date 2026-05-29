@@ -6,57 +6,57 @@ This project analyzes customer shopping behavior using transactional data from 3
 
 #  📂 Dataset Summary 
 
-* -- Total Records:-- 3,900 rows
+* Total Records: 3,900 rows
 
 * Features: 18 columns
 
 * Key Data Points:
 
-  *  Customer Demographics: Age, Gender, Location, Subscription Status
+  *  **Customer Demographics:** Age, Gender, Location, Subscription Status
 
-  * Purchase Details: Item Purchased, Category, Purchase Amount, Season, Size, Color
+  * **Purchase Details:** Item Purchased, Category, Purchase Amount, Season, Size, Color
 
-  * Shopping Behavior: Discount Applied, Promo Code Used, Previous Purchases, Frequency of Purchases, Review Rating, Shipping Type
+  * **Shopping Behavior:** Discount Applied, Promo Code Used, Previous Purchases, Frequency of Purchases, Review Rating, Shipping Type
 
 * Note: Handled 37 missing values in the Review Rating column during the data cleaning phase.
 
  # 🛠️ Tools & Technologies Used
- * Python (Pandas): Data Loading, Cleaning, Feature Engineering, and Exploratory Data Analysis (EDA).
+ * **Python (Pandas):** Data Loading, Cleaning, Feature Engineering, and Exploratory Data Analysis (EDA).
 
-* PostgreSQL (SQL): Advanced querying to extract business metrics and transaction trends.
+* **PostgreSQL (SQL):** Advanced querying to extract business metrics and transaction trends.
 
-* Power BI: Building an interactive dashboard for visual data storytelling.
+* **Power BI:** Building an interactive dashboard for visual data storytelling.
  # 🚀 Project Workflow
 
-   1. Data Cleaning & EDA (Python)
+   **1. Data Cleaning & EDA (Python)**
 
-* Exploration: Analyzed dataset structure and summary statistics using pandas.
+* **Exploration:** Analyzed dataset structure and summary statistics using pandas.
 
-* Imputation: Filled missing Review Rating values using the median rating of each respective product category.
+* **Imputation:** Filled missing Review Rating values using the median rating of each respective product category.
 
-* Standardization: Converted all column headers to snake_case for seamless SQL integration.
+* **Standardization:** Converted all column headers to snake_case for seamless SQL integration.
 
-* Feature Engineering: - Created an age_group column by binning customer ages.
+* **Feature Engineering:** - Created an age_group column by binning customer ages.
 
   * Calculated a purchase_frequency_days metric from purchase history.
 
-* Validation: Resolved redundancies between discount_applied and promo_code_used.
+* **Validation:** Resolved redundancies between discount_applied and promo_code_used.
 
-2. Business Insights & Analysis (SQL)
+**2. Business Insights & Analysis (SQL)**
 
 Loaded the cleaned dataset into PostgreSQL to answer key business questions:
 
-* Revenue by Gender: Male customers generated higher total revenue ($157,890) compared to female customers ($75,191).
+* **Revenue by Gender:** Male customers generated higher total revenue ($157,890) compared to female customers ($75,191).
 
-* Product Performance: Identified the top 5 highest-rated products (Gloves, Sandals, Boots, Hat, Skirt) and the top 3 sellers per category.
+* **Product Performance:** Identified the top 5 highest-rated products (Gloves, Sandals, Boots, Hat, Skirt) and the top 3 sellers per category.
 
-* Subscription Impact: Compared spending habits between subscribers (27% of users) and non-subscribers (73%).
+* **Subscription Impact:** Compared spending habits between subscribers (27% of users) and non-subscribers (73%).
 
-* Discount Dependencies: Pinpointed the top 5 products most frequently bought with a discount (Hats led at 50%).
+* **Discount Dependencies:** Pinpointed the top 5 products most frequently bought with a discount (Hats led at 50%).
 
-* Customer Segmentation: Grouped the customer base into Loyal (3,116), Returning (701), and New (83) segments.
+* **Customer Segmentation:** Grouped the customer base into Loyal (3,116), Returning (701), and New (83) segments.
 
-3. Data Visualization (Power BI)
+**3. Data Visualization (Power BI)**
 
 Built an interactive Customer Behavior Dashboard highlighting:
 
@@ -70,12 +70,12 @@ Built an interactive Customer Behavior Dashboard highlighting:
 
 Based on the analysis, the following strategic actions are recommended:
 
-  -   Boost Subscriptions: Introduce exclusive perks and targeted promotions to increase the current 27% subscriber base.
+  - **Boost Subscriptions:** Introduce exclusive perks and targeted promotions to increase the current 27% subscriber base.
 
-- Launch Loyalty Programs: Incentivize repeat buyers to transition more "Returning" customers into the highly valuable "Loyal" segment.
+- **Launch Loyalty Programs:** Incentivize repeat buyers to transition more "Returning" customers into the highly valuable "Loyal" segment.
 
-- Review Discount Policies: Re-evaluate discount dependencies on specific items (like Hats and Sneakers) to balance sales volume with profit margin control.
+- **Review Discount Policies:** Re-evaluate discount dependencies on specific items (like Hats and Sneakers) to balance sales volume with profit margin control.
 
-- Optimize Product Positioning: Feature top-rated and consistently best-selling products prominently in marketing campaigns.
+- **Optimize Product Positioning:** Feature top-rated and consistently best-selling products prominently in marketing campaigns.
 
-- Implement Targeted Marketing: Focus ad spend and campaigns on the highest revenue-driving age groups (Young Adults and Middle-aged) and users who prefer express shipping.
+- **Implement Targeted Marketing:** Focus ad spend and campaigns on the highest revenue-driving age groups (Young Adults and Middle-aged) and users who prefer express shipping.
